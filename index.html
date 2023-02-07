@@ -16,17 +16,17 @@
     <div class="content">
         <h3>Feliz aniversário Jair!
             <div class="morango">
-                <img src="/assets/logo-gremio-256.png" alt="">
+                <img src="./assets/logo-gremio-256.png" alt="">
             </div>
         </h3>
         <div class="carrousel">
-            <img src="/assets/beleza=mogo.png" alt="Aniver">
-            <img src="/assets/tamo-junto.jpg" alt="Aniver">
-            <img src="/assets/jair-tudo.jpg" alt="Aniver">
-            <img src="/assets/jair-baile.jpg" alt="Aniver">
+            <img src="./assets/beleza=mogo.png" alt="Aniver">
+            <img src="./assets/tamo-junto.jpg" alt="Aniver">
+            <img src="./assets/jair-tudo.jpg" alt="Aniver">
+            <img src="./assets/jair-baile.jpg" alt="Aniver">
         </div>
         <div class="equipe">
-            <img src="/assets/equipe-mogo.jpg" alt="Equipe">
+            <img src="./assets/equipe-mogo.jpg" alt="Equipe">
         </div>
         <div class="texto">
             Rejane - Jaqueline Machado - Jaqueline Marcis - Flávio - Josias - Adriano Lopes - Alexandre -
@@ -55,29 +55,32 @@
                 </g>
             </svg>
         </div>
-        <div class="btn-jair">
-            <iframe src="https://www.myinstants.com/instant/um-forte-abraco-bolsonaro-3634/embed/" frameborder="0" scrolling="no"></iframe>
-        </div>
+        <div class="divisor-botao">
+            <div class="btn-jair">
+                <iframe src="https://www.myinstants.com/instant/um-forte-abraco-bolsonaro-3634/embed/" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <a href="/mata-petista.html" rel="Joguinho">JOGAR!</a>
+        </div>        
     </div>
 </body>
 <script>
-    const equipe = document.querySelector('.equipe');
-    const bobmarley = document.getElementById('bobmarley');
-    const bobzinho = document.getElementById('bobzinho');
-    var audio = new Audio('/audio/bobmarley.mp3');
-    if (equipe) {
-        var counter = 0;
-        equipe.addEventListener('click', function (e) {
-            counter++;
-            if (counter == 5) {
-                bobzinho.style.display = 'block';
-                setTimeout(function () {
-                    bobmarley.play();
-                    audio.play();
-                }, 100);
-            }
-        });
-    }
+    // const equipe = document.querySelector('.equipe');
+    // const bobmarley = document.getElementById('bobmarley');
+    // const bobzinho = document.getElementById('bobzinho');
+    // var audio = new Audio('./assets/som-tiro.mp3');
+    // if (equipe) {
+    //     var counter = 0;
+    //     equipe.addEventListener('click', function (e) {
+    //         counter++;
+    //         if (counter == 5) {
+    //             bobzinho.style.display = 'block';
+    //             setTimeout(function () {
+    //                 bobmarley.play();
+    //                 audio.play();
+    //             }, 100);
+    //         }
+    //     });
+    // }
 </script>
 
 </html>

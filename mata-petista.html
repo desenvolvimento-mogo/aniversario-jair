@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Joguinho</title>
+    <audio id="audio-pistola" src="https://youtu.be/44jygVbbPzM" autoplay></audio>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        .bg-game {
+            width: 100vw;
+        }
+
+        .pistola {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .lula {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        a {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 20px;
+            background-color: #00d26e;
+            border: 1px solid #00d26e;
+            border-radius: 5px;
+            color: #ffff;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-game">
+        <div class="lula">
+            <img src="./assets/lula.jpg" alt="Aniver">
+        </div>
+        <div class="pistola">
+            <img src="./assets/arma1.png" alt="Aniver">
+        </div>
+        <a href="/index.html" rel="Inicial">VOLTAR</a>
+    </div>
+</body>
+<script>
+    const pistola = document.querySelector('.pistola');
+    const somPistola1 = document.getElementById('audio-pistola');
+    var audio = new Audio('./assets/som-tiro.mp3');
+    pistola && pistola.addEventListener('click', () => {
+        setTimeout(function () {
+            //somPistola1.play();
+            audio.play();
+        }, 10);
+    });
+</script>
+
+</html>
