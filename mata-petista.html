@@ -75,9 +75,14 @@
     var audio = new Audio('./assets/som-tiro.mp3');
     pistola && pistola.addEventListener('click', () => {
         setTimeout(function () {
-            //somPistola1.play();
             audio.play();
-        }, 10);
+            
+        }, 0);
+        setTimeout(function () {
+            audio.pause();
+            audio.currentTime = 0;
+        }, 450);
+        
     });
 </script>
 
